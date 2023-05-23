@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RobotX Eurobot</title>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        html {
+            font-size: 20px;
+            font-family: 'Ubuntu';
+        }
+
+        body {
+            background-color: rgb(31, 30, 30);
+            padding: 10px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 0px;
+            color: white;
+        }
+
+        h3 {
+            color: white;
+        }
+
+        /* Wrapper */
+        .icon-button {
+            background-color: white;
+            border-radius: 3.6rem;
+            cursor: pointer;
+            display: inline-block;
+            font-size: 2.0rem;
+            height: 3.6rem;
+            line-height: 3.6rem;
+            margin: 0 5px;
+            position: relative;
+            text-align: center;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            width: 3.6rem;
+        }
+
+        /* Circle */
+        .icon-button span {
+            border-radius: 0;
+            display: block;
+            height: 0;
+            left: 50%;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            transition: all 0.3s;
+            width: 0;
+        }
+
+        .icon-button:hover span {
+            width: 3.6rem;
+            height: 3.6rem;
+            border-radius: 3.6rem;
+            margin: -1.8rem;
+        }
+
+        .sheet span {
+            background-color: #0f9d58;
+        }
+
+        .drive span {
+            background-color: #3B5998;
+        }
+
+        .calculator span {
+            background-color: #0077b5;
+        }
+
+        .ctd-video span {
+            background-color: #4099ff;
+        }
+
+        .github span {
+            background-color: #333;
+        }
+
+        .robot span {
+            background-color: rgb(128, 0, 55);
+        }
+
+        /* Icons */
+        .icon-button i {
+            background: none;
+            color: white;
+            height: 3.6rem;
+            left: 0;
+            line-height: 3.6rem;
+            position: absolute;
+            top: 0;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            transition: all 0.3s;
+            width: 3.6rem;
+            z-index: 10;
+        }
+
+        .icon-button .fa-list-check {
+            color: #0f9d58;
+        }
+
+        .icon-button .fa-hard-drive {
+            color: #3B5998;
+        }
+
+        .icon-button .fa-calculator {
+            color: #0077b5;
+        }
+
+        .icon-button .fa-video {
+            color: #4099ff;
+        }
+
+        .icon-button .fa-github {
+            color: #333;
+        }
+
+        .icon-button .fa-gamepad {
+            color: rgb(128, 0, 55);
+        }
+
+        .icon-button:hover .fa-list-check,
+        .icon-button:hover .fa-hard-drive,
+        .icon-button:hover .fa-calculator,
+        .icon-button:hover .fa-video,
+        .icon-button:hover .fa-gamepad,
+        .icon-button:hover .fa-github {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>RobotX Network</h1>
+    <div>
+        <!-- <h3>Links</h3> -->
+        <a href="https://github.com/robotx-school/eurobot-2024/" target="_blank" class="icon-button github"><i
+                class="fab fa-github"></i><span></span></a>
+        <a href="https://docs.google.com/spreadsheets/d/14HXwr4EfBjjFohmGvR7ut-bPyJIX4jeDnvaB7js6vqU/edit?usp=sharing"
+            target="_blank" class="icon-button sheet"><i class="fa fa-list-check"></i><span></span></a>
+        <a href="https://disk.yandex.ru/d/ikD4yoHyRXRQrg" target="_blank" class="icon-button drive"><i
+                class="fa-solid fa-hard-drive"></i><span></span></a>
+        <a href="https://ret7020.github.io/EurobotCalculator/" target="_blank" class="icon-button calculator"><i
+                class="fa-solid fa-calculator"></i><span></span></a>
+        <a href="http://77.37.184.204:2566/" target="_blank" class="icon-button ctd-video"><i
+                class="fa-solid fa-video"></i><span></span></a>
+        <a href="http://77.37.184.204:2566/" target="_blank" class="icon-button robot"><i
+                class="fa-solid fa-gamepad"></i></i><span></span></a>
+    </div>
+    <!-- <div>
+        <h3>CTD Live</h3>
+        <img src="http://77.37.184.204:2566/video_feed" width="50%">
+    </div> -->
+</body>
+
+</html>
