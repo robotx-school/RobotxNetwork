@@ -1,6 +1,6 @@
 name: Execute git pull on remote ssh server(production server)
 
-on: [push]
+on: []
 jobs:
   build:
     name: Build
