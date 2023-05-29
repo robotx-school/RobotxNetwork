@@ -7,10 +7,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Execute ssh command
-      uses: appleboy/ssh-action@v0.1.10
+      uses: garygrossgarten/github-action-ssh@release
       with:
+        command: "cd ${{ secrets.PATH }} && git pull"
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
         port: 2222
-        script: "cd ${{ secrets.PATH }} && git pull"
