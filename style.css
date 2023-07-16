@@ -80,8 +80,16 @@ h3 {
     background-color: #333;
 }
 
-.robot span {
+.rdui_generic span {
     background-color: rgb(128, 0, 55);
+}
+
+.rdui_robot_big span {
+    background-color: rgb(0, 128, 28);
+}
+
+.rdui_robot_omni span {
+    background-color: rgb(0, 34, 128);
 }
 
 /* Icons */
@@ -121,15 +129,22 @@ h3 {
     color: #333;
 }
 
-.icon-button .fa-gamepad {
+.icon-button .fa-terminal {
     color: rgb(128, 0, 55);
 }
 
+.icon-button .rdui-robot-big {
+    color: rgb(0, 128, 28);
+}
+
+.icon-button .rdui-robot-omni {
+    color: rgb(0, 34, 128);
+}
 .icon-button:hover .fa-list-check,
 .icon-button:hover .fa-hard-drive,
 .icon-button:hover .fa-calculator,
 .icon-button:hover .fa-video,
-.icon-button:hover .fa-gamepad,
+.icon-button:hover .fa-terminal,
 .icon-button:hover .fa-github {
     color: white;
 }
